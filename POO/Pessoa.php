@@ -25,6 +25,14 @@ class Pessoa
     }
     public function __toString(): string
     {
-        return "Nome: " . $this->nome . " | Idade: " . $this->idade . " | Telefone: " . $this->telefone . "</br>";
+        return "Nome: " . $this->nome . " | Idade: " . $this->idade . " | Telefone: " . $this->telefone;
+    }
+    public function setNome(string $nome): void
+    {
+        $this->nome = $nome;
+    }
+    public function getNome(): string
+    {
+        return $this->nome;
     }
 }
