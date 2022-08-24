@@ -5,7 +5,7 @@
  * se eu definir que um método será final, então esse método em específico não
  * pode ser herdado
  */
-final class ClasseFinal
+final class ClasseFinal 
 {
     public function teste(): void
     {
