@@ -27,4 +27,16 @@ abstract class Animal
     {
         return $this->nome;
     }
+    public function __toString(): string
+    {
+        return "Nome: " . $this->getNomeAnimal() . "</br>";
+    }
+    public function __set($atributo, $valor): void
+    {
+        $this->nome = $valor;
+    }
+    public function __get($atributo)
+    {
+        return $this->nome;
+    }
 }
